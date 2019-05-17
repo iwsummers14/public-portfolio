@@ -1,0 +1,24 @@
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.deps.json
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.runtimeconfig.json
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.runtimeconfig.dev.json
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.dll
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.pdb
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.csprojResolveAssemblyReference.cache
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.csproj.CoreCompileInputs.cache
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.AssemblyInfoInputs.cache
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.AssemblyInfo.cs
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.dll
+C:\Users\a-summersi\source\repos\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.pdb
+C:\Users\a-summersi\source\repos\Hammond\Hammond\bin\Release\netcoreapp2.0\output\placeholder.txt
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\output\placeholder.txt
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.deps.json
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.runtimeconfig.json
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.runtimeconfig.dev.json
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.dll
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\bin\Release\netcoreapp2.0\Hammond.pdb
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.csprojResolveAssemblyReference.cache
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.csproj.CoreCompileInputs.cache
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.AssemblyInfoInputs.cache
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.AssemblyInfo.cs
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.dll
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\obj\Release\netcoreapp2.0\Hammond.pdb

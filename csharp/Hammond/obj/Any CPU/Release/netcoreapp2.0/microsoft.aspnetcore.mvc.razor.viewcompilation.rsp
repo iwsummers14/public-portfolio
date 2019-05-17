@@ -1,0 +1,15 @@
+C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=Hammond
+--content-root=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\Home\Contact.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\Home\Index.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\RefreshJob\RefreshJobForm.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\RefreshJob\RemoveXML.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\RefreshJob\Results.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\RefreshJob\ReviewXML.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\Shared\Error.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\Shared\_Layout.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\_ViewImports.cshtml
+--file=C:\Users\a-summersi\OneDrive - Distribution Management\Script Repository\Visual Studio Source\Hammond\Hammond\Views\_ViewStart.cshtml
