@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Form Submission Results";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Form Results</h2>
+
+<h3>Please review your input below.</h3>
+<ul>
+
+    <li>@ViewData["Dataset"]</li>
+    <li>@ViewData["IsSatelliteDC"]</li>
+    <li>@ViewData["SourceDC"]</li>
+    <li>@ViewData["Requestor"]</li>
+    <li>@ViewData["Reason"]</li>
+
+</ul>
+
+<p>These values have been stored in an XML file and queued for processing.</p>
+<p><span style="color:#ff6f69;font-weight:bold;font-size:18px;">Processing occurs on the hour. If you need to make corrections, you can remove the file by clicking the button below.</span></p>
+<button class="remove-button" type="button" onclick="location.href='@Url.Action("ReviewXML", "RefreshJob")'">Review Queued User Objects</button>

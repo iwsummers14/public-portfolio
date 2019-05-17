@@ -1,0 +1,138 @@
+﻿@model CloneJob
+@{
+
+    //anti-forgery token
+    @using (Html.BeginForm("Manage", "Account"))
+    {
+        @Html.AntiForgeryToken()
+    }
+
+    }
+<script type="text/javascript">
+
+    //HI DEVELOPERS YOU'RE WELCOME FOR THIS
+
+    function hideSourceDC() {
+
+        //hide this punk element because its only necessary if you choose a Satellite dataset
+        document.getElementById('sourceDC').style.display = "none";
+
+    };
+
+    function setDesc() {
+
+        //declare variable choice
+        var choice;
+
+        //set value of choice to the dataset selection value
+        choice = document.jobParams.dataset.value;
+
+        //what to do for value "Daily"
+        if (choice == "Daily") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Sales and DocStore on DEVSQL-DBTEST5, DataCollector on DEVSQL-DBTEST4</span></label>';
+
+        };
+        //what to do for value "Weekly"
+        if (choice == "Weekly") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Sales and DocStore on COM-SITE-DBTEST2, DataCollector on COM-SITE-DBTEST1</span></label>';
+
+        };
+        //what to do for value "Monthly"
+        if (choice == "Monthly") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Sales and DocStore on COM-SITE-DBTEST1, DataCollector on COM-SITE-DBTEST2</span></label>';
+
+        };
+        //what to do for value "External Testing"
+        if (choice == "External Testing") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Sales and DocStore on DEVSQL-DBTEST4, DataCollector on DEVSQL-DBTEST5</span></label>';
+
+        };
+        //what to do for value "Satellite-DEVSQL1"
+        if (choice == "Satellite-DEVSQL1") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Satellite on DEVSQL-SQL1 - Source DC Varies</span></label>';
+
+            //unhide the sourceDC input div if this option is chosen
+            document.getElementById('sourceDC').style.display = "block";
+        };
+        //what to do for value "Satellite-DEVSQL2"
+        if (choice == "Satellite-DEVSQL2") {
+
+            document.getElementById('description-dataset').innerHTML = '<label><span style="font-weight:bold;color:#ff751a;">Satellite on DEVSQL-SQL2 - Source DC Varies</span></label>';
+
+            //unhide the sourceDC input div if this option is chosen
+            document.getElementById('sourceDC').style.display = "block";
+        };
+        //reset div if no input
+        if (choice == "") {
+
+            document.getElementById('description-dataset').innerHTML = '';
+            document.getElementById('sourceDC').style.display = "none";
+
+        };
+    };
+
+    window.onload = hideSourceDC;
+
+</script>
+
+    <h2>Submit a Request for a Dataset Refresh</h2>
+
+    <div class="body-content">
+        <h3>Enter the required information below.</h3>
+        <hr />
+        <form asp-action="Index" asp-controller="RefreshJob" name="jobParams">
+            <fieldset>
+                <legend>Job Parameters</legend>
+                <div class="formfields">
+                    <label asp-for="Dataset">
+                        Choose a dataset:
+                        <input list="datasets" asp-for="Dataset" name="dataset" oninput="setDesc()"/>
+                        <datalist id="datasets">
+                            <!--<option value="Daily" />-->
+                            <!--<option value="Weekly" />-->
+                            <!--<option value="Monthly" />-->
+                            <option value="External Testing" />
+                            <option value="Satellite-DEVSQL1" />
+                            <option value="Satellite-DEVSQL2" />
+                        </datalist>
+                    </label>
+                </div>
+                <div class="formfields" id="description-dataset">
+                </div>
+                <div class="formfields" id="sourceDC">
+                    <label asp-for="SourceDC">
+                        Choose a source DC:
+                        <input list="distribution-centers" asp-for="SourceDC" />
+                        <datalist id="distribution-centers">
+                            <option value="CARSITE" />
+                            <option value="CALSITE" />
+                            <option value="CHISITE" />
+                            <option value="STLSITE" />
+                            <option value="DALSITE" />
+                        </datalist>
+                    </label>
+                </div>
+                <div class="formfields">
+                    <label asp-for="Requestor">
+                        Requestor:
+                        <input type="text" asp-for="Requestor" />
+                    </label>
+                </div>
+                <div class="formfields">
+                    <label asp-for="Reason">
+                        Reason for Refresh:
+                        <input type="text" asp-for="Reason" />
+                    </label>
+                </div>
+                <div class="formfields">
+                    <input type="submit" value="Submit Job" class="formfields button" />
+                </div>
+
+            </fieldset>
+        </form>
+    </div>

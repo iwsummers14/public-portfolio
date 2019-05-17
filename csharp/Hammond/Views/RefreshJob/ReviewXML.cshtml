@@ -1,0 +1,39 @@
+﻿@model CloneJobXMLFile
+@{
+    ViewData["Title"] = "Remove Queued XML Objects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    //declare the array used to populate the datalist item
+    var FileArray = ViewData["FileArray"] as string[];
+
+    //anti-forgery token
+    @using (Html.BeginForm("Manage", "Account"))
+    {
+        @Html.AntiForgeryToken()
+    }
+
+}
+
+<h2>Remove a Queued User Object</h2>
+
+<div class="body-content">
+    <h3>Select a queued XML file to remove it if necessary.</h3>
+    <hr />
+    <p>Choose a file from the box below to remove it from the queue.</p>
+    <br />
+    <form asp-action="RemoveXML" asp-controller="RefreshJob">
+        <input asp-for="FileName" style="display:block;width:25%;float:inherit;margin:unset;" list="xmlfiles">
+        <datalist id="xmlfiles">
+
+            @foreach (string file in FileArray)
+            {
+                <option value="@file" />
+            }
+
+        </datalist>
+        <br />
+        <p>If you have made an error in submitting this file you can remove it by clicking the "Remove" button below.</p>
+        <p>Processing occurs on the hour so remove any erroneous entries before the next processing interval. </p>
+        <input type="submit" class="remove-button" value="Remove This Object" style="display:block;width:25%;float:inherit;margin:unset;" />
+    </form>
+</div>
