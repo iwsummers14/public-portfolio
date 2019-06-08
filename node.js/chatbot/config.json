@@ -1,0 +1,15 @@
+{
+          "name":"chatbot",
+          "mysql":{
+          "host":"your-sql-server-here.domain.com",
+          "database":"database-name",
+          "user":"database-user",
+          "password":"database-password"
+          },
+          "discordToken": "discord-authentication-token",
+          "sqlSpecs":{
+            "quoteTable":"tablename-quotes",
+            "actionTable":"tablename-actions"
+          }
+
+}
