@@ -15,3 +15,8 @@ Currently, these are miscellaneous PowerShell scripts that I have written. I pla
 
 ## sql
 These are examples of different SQL procedures I have written while administering Microsoft SQL Server.
+
+## terraform
+This is an example module I wrote to set up a small lab environment in Azure.  The environment includes a virtual network, two subnets, two VM's with NICs, and a network security group with an RDP-allow rule.  This was written in my home environment which features HashiCorp Vault for secrets, and a Consul backend that has been configured for ACLs.  
+
+I wrote this to demonstrate terraform modules, backend configuration, variable definitions, variable files, and obtaining secrets from Vault.
